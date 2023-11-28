@@ -31,12 +31,3 @@ function toBase64(value: String | Uint8Array) {
     }
     return btoa((value as Uint8Array).reduce((data, byte) => data + String.fromCharCode(byte), ''));
 }
-// export function GET(request: NextRequest) {
-//   const searchParams = request.nextUrl.searchParams
-//   const query = searchParams.get('url')
-//   // query is "hello" for /api/search?query=hello
-//   return new Response(query);
-// }
-// import Image from 'next/image'
-
-
